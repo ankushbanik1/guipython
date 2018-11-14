@@ -1,0 +1,11 @@
+from tkinter import *
+root=Tk()
+lebel1=Label(root,text="name")
+lebel2=Label(root,text="password")
+entry1=Entry(root)
+entry2=Entry(root)
+lebel1.grid(row=0)
+lebel2.grid(row=1)
+entry1.grid(row=0,column=1)
+entry2.grid(row=1,column=1)
+root.mainloop()
