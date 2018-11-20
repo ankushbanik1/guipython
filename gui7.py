@@ -1,17 +1,22 @@
 from tkinter import *
 root=Tk()
-
-def rightclick(Event):
-     print("right")
-
-def middleclick(Event):
+def rightclick(event):
+    print("right")
+def middleclick(event):
     print("middle")
-def leftclick(Event):
+def leftclick(event):
     print("left")
 
-fream=Frame(root, width=500, height=300)
-fream.bind("<Button-1>", rightclick)        
-fream.bind("<Button-1>", middleclick)      
-fream.bind("<Button-1>", leftclick)      
-fream.pack()     
+frame=Frame(root, width=200, height=300)
+frame.bind("<Button-1>",rightclick)    
+frame.bind("<Button-2>",middleclick)  
+frame.bind("<Button-3>",leftclick)  
+frame.pack()
+
+
+
+
+
+
+
 root.mainloop()
